@@ -1,0 +1,178 @@
+body{
+    background-image: url("IMMAGINI/INDEX/sfondo.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(10, 10, 10);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*parte introduttiva al sito*/
+
+h1#mainTitle{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    border: 2px solid red;
+}
+
+h2#subtitle{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 500px;
+    left: 140px;
+    font-style: italic;
+}
+
+ul#menuList{
+    border: 2px solid red;
+    color: white;
+}
+
+ul#menuList li{
+    display: inline-block;
+    border: 2px solid green;
+    margin-left: 25px;
+}
+
+ul#menuList li:visited{
+    color: white;
+    text-decoration: none;
+}
+
+ul#menuList li:link{
+    color: white;
+    text-decoration: none;
+}
+
+ul#menuList li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/*container della descrizione*/
+
+div#mainContainerInformation{
+    width: 100.1%;
+    position: absolute;
+    left: -5px;
+    height: 4000px;
+    margin-top: 1050px;
+    background-color: rgb(10, 10, 10);
+    border-top: 2px solid #154e97;
+}
+
+img#imgFeatures{
+    width: 45px;
+    position: relative;
+    top: 35px;
+    left: 130px;
+}
+
+div#contentFeature{
+    border: 2px solid green;
+    color: white;
+    width: 82%;
+    height: 650px;
+    position: relative;
+    top: -610px;
+    left: 200px;
+}
+
+div.card{
+    width: 300px;
+    height: 350px;
+    border: 2px solid rgba(132, 228, 154, 0.5);
+    background-color: rgba(132, 228, 154, 0.2);
+    border-radius: 25px;
+}
+
+div.card h3{
+    margin-top: 35px;
+    color: #84e49a;
+    text-align: center;
+}
+
+div.card p{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+div.card img{
+    width: 110px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+
+div#contentWhoPlays{
+    border: 2px solid orange;
+    color: white;
+    width: 82%;
+    height: 650px;
+    position: relative;
+    top: -1230px;
+    left: 200px;
+}
+
+img#imgWhoPlays{
+    width: 105px;
+    height: 50px;
+    position: relative;
+    top: -580px;
+    left: 97.5px;
+}
+
+div#boxContentAboutWho{
+    width: 80%;
+    margin: auto;
+    border: 1px solid grey;
+    background: rgba(128, 128, 128, 0.6);
+    
+}
+
+img#img_aboutWho{
+    width: 450px;
+    border-radius: 15px;
+    position: relative;
+    left: 300px;
+}
+
+
+
+
+/*container prompt*/
+
+div#mainContainer{
+    border: 2px solid #641400;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: -800px;
+    background-color: black;
+    color: white;
+}
+
+div#menu-prompt{
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#input-start{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-left: 15px;
+}
+

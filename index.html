@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> LOG IN</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="index, prompt, accedi">  
+        <meta name="author" content="Gianluca Mastrolorito, Davide Monteleone, Riccardo Battista">  
+        <meta name="description" content="Log in a pagine esterne">  
+
+        <!-- collegamenti a pagine esterne-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <link rel="stylesheet" type="text/css" href="index_css.css"> 
+        <script type="text/javascript" src="index_javascript.js"></script>
+        
+        <style>
+            .lineaVerde{
+                background: linear-gradient(to bottom, darkGreen, rgb(179, 238, 179));
+                width: 5.5px;
+                height: 300px;
+                position: relative;
+                top: 20px;
+                left: 150px;
+            }
+
+            .lineaArancione{
+                background: linear-gradient(to bottom, orange, rgb(253, 174, 174));
+                width: 5.5px;
+                height: 300px;
+                position: relative;
+                top: -609px;
+                left: 150px;
+            }
+
+            p.paragrafoFeatures{
+                font-size: 35px;
+            }
+
+            div#codice ul{
+                border: 2px solid red;
+                width: 250px;
+            }
+
+            div#codice ul li{
+                position: relative;
+                left: -40px;
+                display: inline-block;
+                border: none;
+                padding: 10px;
+            }
+
+            div#codice div{
+                position: relative;
+                top: -20px;
+            }
+
+            div#menu-prompt img{
+                width: 85%;
+                margin: auto;
+            }
+        
+
+
+        </style>
+        
+
+    </head>
+
+    <body>
+        <section>
+            <div> <!-- prendere spunto da GitHub-->
+                <ul id="menuList"> <!-- sono segnalibri a parti della pagina più giù-->
+                    <li > <a href="#imgFeatures"> CARATTERISTICHE </a> </li>
+                    <li> <a href="#"> SU COSA SI BASA </a> </li>
+                </ul>
+
+            </div>
+
+            <h1 id="mainTitle">  🅓🅜-🅡🅑 🅟🅡🅞🅙🅔🅒🅣 </h1>
+            <h2 id="subtitle"> Benvenuto nella piattaforma online più amata dai gamer professionisti </h2>
+
+
+            <div id="mainContainerInformation">
+
+                <div class="lineaVerde"> </div>
+                <img src="IMMAGINI/INDEX/sticker_features.png" id="imgFeatures" draggable="false">
+                <div class="lineaVerde" style="top: 50px; height: 600px; background: linear-gradient(to bottom, rgb(179, 238, 179), orange)"> </div>
+
+                <div id="contentFeature">
+                    <!-- <div id="cursore"> &nbsp; </div> -->
+                    <h2> CARATTERISTICHE</h2>
+
+                    <p class="paragrafoFeatures"> 
+                        <span style="color: #84e49a"> Il gioco di innovazione nel mondo del gaming.  </span> <br>
+                        Sviluppato dalla DM-RB corporation, azienda sviluppatrice di software e game online
+                    </p>
+
+                    <div class="card" style="position: relative; top: 50px; left: 250px">
+                        <img src="IMMAGINI/INDEX/gameIcon.jpg" id="icon-card1">
+                        <h3> LE BASI </h3>
+                        <p> Qua verranno inserite le basi del gioco, cosa ci ha spinto a programmarlo etc...</p>
+                    </div>
+
+                    <div class="card" style="position: relative; top: -305px; left: 650px">
+                        <img src="IMMAGINI/INDEX/whoIcon.jpg" style="width: 110px; height: 100px;">
+                        <h3> A CHI E' RIVOLTO </h3>
+                        <p> Scrivere a chi può interessare il gioco</p>
+                    </div>
+
+                </div>
+
+                <div class="lineaArancione"> </div>
+                <img src="IMMAGINI/INDEX/sticker_aboutWho.png" id="imgWhoPlays">
+                <div class="lineaArancione" style="top: -558px; height: 600px; background: linear-gradient(to top, orange, rgb(253, 174, 174));"> </div>
+
+                <div id="contentWhoPlays">
+                    <h2> SU COSA SI BASA</h2>
+
+                    <p class="paragrafoFeatures"> 
+                        <span style="color: orange"> L'intero gioco è basato sull'azione e nell'abilità nei giochi spara-tutto.  </span> <br>
+                        Sviluppato dalla DM-RB corporation, il gioco ha raccolto il <span style="color: orange; text-decoration: underline;"> 90.5% </span> di recensioni positive 
+                    </p>
+
+                    <div id="boxContentAboutWho">
+                        <p>
+                            Programmato con <span style="color: orange"> linguaggi ad alta efficienza</span>,<br> Space shooter risulta un gioco a basso contenuto di bug. <br>  <br>La <span style="color: orange"> fluidità </span> è sempre al primo posto
+                        </p>
+                        <div id="codice" style="border: 1px solid grey; width: 300px; margin-left: 300px; background-color: transparent;">
+                            <ul>
+                                <li style="border-bottom: none; border: 2px solid grey "> index.html </li>
+                                <li style="left: -45px"> time.css </li>
+                                <li style="left: -50px"> time.js </li>
+                            </ul>
+
+                            <div> 
+                                <br>
+                                &nbsp; 1 &nbsp;&nbsp; split.toSx <br>
+                                &nbsp; 2 <br>
+                                &nbsp; 3 &nbsp;&nbsp; ok <br>
+                                &nbsp; 4 &nbsp;&nbsp; split.toSx <br>
+                                &nbsp; 5 <br>
+                                &nbsp; 6 &nbsp;&nbsp; ok <br>
+                                &nbsp; 7 &nbsp;&nbsp; split.toSx <br>
+                                &nbsp; 8 <br>
+                                
+                            </div>
+
+        
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- prompt -->
+                <div id="mainContainer">
+                    <div id="menu-prompt"> 
+                        <img src="IMMAGINI/INDEX/titolo_prompt.png" draggable="false"> 
+                    </div>
+    
+                    <p style="margin-bottom: 50px; margin-top: 55px; text-align: center;"> 
+                        DM_RB Company&#8482; [Versione 10.0.19044.1826] <br> 
+                        (©) DM_RB Corporation. Tutti i diritti sono riservati. 
+                    </p>
+                    
+                    <div>
+                        C: \User:metatask\ Avvia un processo con una frase chiave:                   
+                        <input type="text" id="input-start" value=""> 
+                    </div>
+                        
+                </div>
+
+
+            </div>
+
+        </section>
+        
+    </body>
+
+</html>
