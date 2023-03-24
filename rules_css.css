@@ -1,0 +1,30 @@
+body{
+    background-image: url("IMMAGINI/RULES/sfondo.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div#mainContainer{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 9px;
+}
+
+div#mainContainer h1{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div#mainContainer h4{
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    margin-top: 10px;
+}
