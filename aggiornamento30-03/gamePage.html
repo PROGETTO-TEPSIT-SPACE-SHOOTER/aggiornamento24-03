@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> GAME </title>
+
+        <meta name="keywords" content="SpaceShooter, videogame, navicella">  
+        <meta name="author" content="Davide Monteleone, Riccardo Battista">  
+        <meta name="description" content="Gioco navicelle">
+
+        <link rel="stylesheet" type="text/css" href="gamePage_css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <script src="gamePage_javascript.js"></script>
+    </head>
+
+    <body>
+        <div id="selezione">
+            <!--<h1> SELEZIONA LA TUA NAVICELLA </h1> -->
+            <img id="titoloSelezione" src="IMMAGINI/GAME/gameTitle.png" alt="gameTitle" draggable="false">
+
+            <center> 
+                <div id="mainContainer"> 
+                    <img src="IMMAGINI/GAME/navicella1.png" id="navicellaScelta" draggable="false">
+                    <div id="showNameNav">
+                        <p> Navicella scelta: ORION </p>
+                    </div>
+                </div>
+            </center>
+
+            <center>
+                <div style="border: 2px solid red; position: absolute; top: 17.5%; left: 15%; width: max-content;">
+                    <div id="arrowLeft" class="arrow">
+                        &larr;
+                    </div>
+                    <div id="arrowRight" class="arrow" style="margin-left: 12px; color: lightGreen;">
+                        &rarr;
+                    </div>
+
+                    <button id="confirm"> conferma </button>
+                </div>
+            </center>
+
+        </div>
+
+
+
+    </body>
+</html>
