@@ -34,7 +34,7 @@ $(document).ready(function(){
                     alert("rules");
 
                 else{
-                    confirm("Per avviare le regole scrivere 'rule', per il gioco digitare una stringa qualsiasi. L'importante è che contenga le parole 'game' e 'start'. L'ordine sceglilo tu :)");
+                    confirm("Per avviare le regole scrivere 'rule', per il gioco digitare una stringa qualsiasi. L'importante è che contenga le parole 'game' e 'start'.");
                 }
 
             }
