@@ -8,33 +8,41 @@ $(document).ready(function(){
 
     });
 
-    var input = $("#input-start");
+    var input = document.getElementById("input-start");
     var loading = document.createElement("div");
     var btnStart = document.createElement("button");
     var avvisoLoading = document.createElement("p");
     avvisoLoading.innerHTML = "Loading...";
     var cont = 0, time;
 
+    var div = document.createElement("div");
+    document.getElementById("mainContainer").appendChild(div);
+
     window.onkeydown = startProcess;
 
 
     function startProcess(event){
-        var temp = input.val().toLowerCase();
-        
+        var temp = input.value.toLowerCase();
+
         switch(event.keyCode){
-            case 13:{
+            case 13:{                          
                 if(abilitaComando(temp, "start", "game")){
+                    div.innerHTML = "";
                     styleCssLoading();
                     styleCssAvvisoLoading();
-                    
+
                     time = window.setInterval(startLoadingGame, 1000);
                 }
-                    
-                else if(abilitaComando(temp, "rule", ""))
-                    alert("rules");
+
+                else if(abilitaComando(temp, "rule", "")){
+                    div.innerHTML = "";
+                    div.appendChild(btnStart);
+                    btnStart.innerHTML =
+                    "<a href='rules.html'> <img src='IMMAGINI/INDEX/sticker_playGame.png' style='width: 20px'> <span> go to </span> </a> ";
+                }
 
                 else{
-                    confirm("Per avviare le regole scrivere 'rule', per il gioco digitare una stringa qualsiasi. L'importante è che contenga le parole 'game' e 'start'.");
+                    confirm("Per avviare le regole scrivere 'rule', per il gioco digitare una stringa qualsiasi. L'importante è che contenga le parole 'game' e 'start'. L'ordine sceglilo tu :)");
                 }
 
             }
@@ -53,15 +61,15 @@ $(document).ready(function(){
             clearInterval(time);
 
             //definisco il bottone per avviare il game
-            document.getElementById("mainContainer").appendChild(btnStart);
+            div.appendChild(btnStart);
             btnStart.innerHTML =
-            "<a href='gamePage.html' target='_blank'> <img src='IMMAGINI/INDEX/sticker_playGame.png' style='width: 20px'> <span> play </span> </a> ";
+            "<a href='gamePage.html'> <img src='IMMAGINI/INDEX/sticker_playGame.png' style='width: 20px'> <span> play </span> </a> ";
         }
-            
+
         else{
             if(cont == 0)
-                document.getElementById("mainContainer").appendChild(avvisoLoading);
-            document.getElementById("mainContainer").appendChild(loading);
+                div.appendChild(avvisoLoading);
+            div.appendChild(loading);
             incrementaQuadratini(loading);
         }
     }
@@ -74,26 +82,15 @@ $(document).ready(function(){
         cont = cont+1; //aumento i contatore dei quadratini stampati
     }
 
-    //DA METTERE CON JQuery
     function styleCssQuadratino(quadratino){ //modifico il CSS di ogni singolo quadrato
-        quadratino.style.width = "15px";
-        quadratino.style.height = "15px";
-        quadratino.style.backgroundColor = "green";
-        quadratino.style.float = "left";
-        quadratino.style.marginLeft = "5px";
-        quadratino.style.marginTop = "5px";
-        quadratino.style.marginBottom = "5px";
+        $(quadratino).css({"width": "15px", "height": "15px", "background-color": "green"});
+        $(quadratino).css({"float": "left", "margin-left": "5px", "margin-top": "5px", "margin-bottom": "5px"});
 
         return quadratino;
     }
 
     function styleCssLoading(){
-        loading.style.width = "205px";
-        loading.style.height = "25px";
-        loading.style.marginTop = "30px";
-        loading.style.border = "2px solid green";
-        loading.style.borderRadius = "10px";
-        loading.style.marginLeft = "37.5%";
+        $(loading).css({"width": "205px", "height": "25px", "margin-top": "30px", "border": "2px solid green", "border-radius": "10px", "margin-left": "37.5%"});
     }
 
     function styleCssAvvisoLoading(){
